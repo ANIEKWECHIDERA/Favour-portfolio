@@ -88,7 +88,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   closeBtn.addEventListener("click", closeModal);
-  //   modal.addEventListener("click", closeModal);
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
 
   //handle the display of the buttons
 

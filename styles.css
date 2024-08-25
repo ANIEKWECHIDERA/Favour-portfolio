@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: inside;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -20,7 +21,7 @@ nav {
   top: 0;
   width: 100%;
   padding: 30px;
-  background-color: #0d1216ea;
+  background-color: #171f25ea;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   display: flex;
@@ -30,7 +31,7 @@ nav {
 }
 
 .nav-links {
-  min-width: 200px;
+  min-width: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,6 +125,10 @@ hr {
   width: 100%;
   margin: 40px 0;
   border: 1px solid #cc6ce62f;
+}
+
+.line-mobile {
+  display: none;
 }
 
 .skills h3 {
@@ -258,8 +263,8 @@ iframe {
 
 .close-btn {
   position: absolute;
-  top: 40px;
-  left: 100px;
+  top: 20px;
+  left: 10px;
   font-size: 2rem;
   cursor: pointer;
   color: white;
@@ -276,7 +281,7 @@ iframe {
 #prevVideo {
   position: absolute;
   top: 45%;
-  left: 45px;
+  left: 4px;
   font-size: 2rem;
   cursor: pointer;
   color: white;
@@ -288,7 +293,7 @@ iframe {
 #nextVideo {
   position: absolute;
   top: 45%;
-  right: 45px;
+  right: 4px;
   font-size: 2rem;
   cursor: pointer;
   color: white;
@@ -307,4 +312,94 @@ iframe {
 #modalTitle {
   font-weight: 200;
   font-size: 1.4rem;
+}
+
+@media (max-width: 48rem) {
+  .cv {
+    display: none;
+  }
+
+  .bio {
+    width: 85%;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .skills-contact {
+    display: block;
+    width: 85%;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .contact {
+    margin-top: 30px;
+  }
+
+  .contact h3 {
+    margin-bottom: 0px;
+  }
+
+  .contact ul li {
+    margin: 20px 0px;
+    font-size: 0.9rem;
+  }
+
+  .line-mobile {
+    display: block;
+  }
+
+  .personal-summary {
+    max-width: 100%;
+    text-align: justify;
+    padding-right: 0;
+    font-size: 0.9rem;
+  }
+
+  .personal-summary h2 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .bck-img {
+    background: url(images/Welcome-to-My-Portfolio.png);
+    width: 95%;
+    height: 150px;
+    margin: 0 auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 3px;
+  }
+
+  nav {
+    padding: 30px 10px;
+  }
+
+  nav h2 {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 5px;
+    transition: all 200ms ease;
+    color: white;
+    margin: 0;
+  }
+
+  main img {
+    top: 60px;
+    right: 0px;
+  }
 }
