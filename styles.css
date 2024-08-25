@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: inside;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0d1216;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 30px;
+  background-color: #0d1216ea;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-links {
+  min-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: all 200ms ease;
+  color: white;
+  margin-right: 20px;
+}
+
+.nav-links a:hover {
+  background-color: #cc6ce680;
+  border-radius: 5px;
+  transition: all 200ms ease;
+}
+
+.active {
+  padding: 10px 30px;
+  background-color: #cc6ce62f;
+  border-radius: 5px;
+}
+
+nav h2 {
+  color: white;
+}
+
+.bck-img {
+  background: url(images/Welcome-to-My-Portfolio.png);
+  width: 60%;
+  height: 400px;
+  margin: 0 auto;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.bio {
+  background-color: #2526277e;
+  backdrop-filter: blur(10px);
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.cv {
+  text-align: center;
+}
+
+.personal-summary {
+  font-weight: 300;
+  max-width: 40%;
+  text-align: justify;
+  padding-right: 30px;
+}
+
+.personal-summary h2 {
+  margin-bottom: 10px;
+}
+
+.skills-contact {
+  background-color: #2526277e;
+  backdrop-filter: blur(10px);
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.skills {
+  min-width: 200px;
+}
+
+hr {
+  width: 100%;
+  margin: 40px 0;
+  border: 1px solid #cc6ce62f;
+}
+
+.skills h3 {
+  font-weight: 500;
+}
+
+.skills ul {
+  margin-top: 20px;
+}
+
+.skills ul li {
+  font-weight: 300;
+  margin: 10px 0px;
+}
+
+.contact {
+  list-style: none;
+}
+
+.contact h3 {
+  font-weight: 500;
+}
+
+.contact ul li {
+  font-weight: 300;
+  margin: 40px 0px;
+}
+
+.contact a {
+  min-width: 168.97px;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: #cc6ce62f;
+  color: white;
+  border-radius: 5px;
+  transition: all 200ms ease;
+}
+
+.contact a:hover {
+  background-color: #cc6ce680;
+  border-radius: 5px;
+  transition: all 200ms ease;
+}
+
+.download-button {
+  min-width: 168.97px;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #cc6ce62f;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 200ms ease;
+}
+
+.download-button:hover {
+  background-color: #cc6ce680;
+  border-radius: 5px;
+  transition: all 200ms ease;
+}
+
+main {
+  position: relative;
+}
+
+main img {
+  position: fixed;
+  top: 600px;
+  right: 500px;
+  z-index: -100;
+}
+
+/* ------------------------------PROJECT PAGE-------------------------------------------- */
+.projects {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.125rem, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.project {
+  text-align: center;
+}
+
+.project h2 {
+  font-weight: 200;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.project h2:hover {
+  color: #cc6ce680;
+}
+
+iframe {
+  border-radius: 10px;
+}
