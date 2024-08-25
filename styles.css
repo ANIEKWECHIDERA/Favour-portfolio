@@ -6,7 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: inside;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 body {
@@ -314,6 +314,8 @@ iframe {
   font-size: 1.4rem;
 }
 
+/* --------------------------------------MEDIA QUERIES-------------------------------- */
+
 @media (max-width: 48rem) {
   .cv {
     display: none;
@@ -401,5 +403,14 @@ iframe {
   main img {
     top: 60px;
     right: 0px;
+  }
+
+  .projects {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16.125rem, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 30px;
   }
 }
