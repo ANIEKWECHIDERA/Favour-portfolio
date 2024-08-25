@@ -6,7 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: inside;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -314,6 +314,11 @@ iframe {
   font-size: 1.4rem;
 }
 
+#modalVideo {
+  width: 1280px;
+  height: 720px;
+}
+
 /* --------------------------------------MEDIA QUERIES-------------------------------- */
 
 @media (max-width: 48rem) {
@@ -412,5 +417,22 @@ iframe {
     gap: 2rem;
     margin: 0 auto;
     margin-top: 30px;
+  }
+
+  .modal-content {
+    margin: auto;
+    padding: 20px;
+    width: 95%;
+    /* background-color: rgba(255, 255, 255, 0.123); */
+    border-radius: 8px;
+  }
+
+  #modalVideo {
+    width: 363px;
+  }
+
+  #prevVideo,
+  #nextVideo {
+    top: 60%;
   }
 }
