@@ -322,7 +322,7 @@ iframe {
 /* --------------------------------------MEDIA QUERIES-------------------------------- */
 
 @media (max-width: 48rem) {
-  .cv {
+  .cv-preview {
     display: none;
   }
 
