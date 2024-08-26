@@ -12,11 +12,12 @@
   </head>
   <body>
     <nav>
-      <h2>Favour Isioma Iyama</h2>
+      <div class="name"><h2>Favour Isioma Iyama</h2></div>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="projects.html" class="active">Projects</a>
       </div>
+      <div onclick="openMenu()" class="menu"><i class="bi bi-list"></i></div>
     </nav>
 
     <header>
@@ -255,5 +256,15 @@
       <img src="images/bkg-img.png" alt="" />
     </main>
     <script src="script.js"></script>
+    <script>
+      const menuBtn = document.querySelector('.menu');
+      const navBar = document.querySelector('nav');
+
+      const openMenu = () => {
+        navBar.classList.toggle('openMenu');
+      };
+
+      //menuBtn.addEventListener('click', openMenu);
+    </script>
   </body>
 </html>
