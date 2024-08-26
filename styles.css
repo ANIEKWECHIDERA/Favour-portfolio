@@ -474,10 +474,17 @@ iframe {
 
   .menu {
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 10%;
     display: inline-block;
     padding: 0 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    outline: 1px solid #cccccc1e;
+    border-radius: 4px;
+  }
+
+  .menu:active {
+    background-color: #cccccc26;
+    transition: background-color 0.3s ease;
   }
 }
