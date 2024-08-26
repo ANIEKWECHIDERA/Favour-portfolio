@@ -14,6 +14,7 @@ body {
   background-color: #0d1216;
   color: white;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 nav {
@@ -235,6 +236,7 @@ main img {
 
 iframe {
   border-radius: 10px;
+  align-items: center;
 }
 
 /* --------------------------------------MODAAL WINDOW---------------------------------- */
@@ -321,6 +323,19 @@ iframe {
 #modalVideo {
   width: 100%;
   height: 720px;
+}
+
+#load-more {
+  display: inline-block;
+  margin-top: 20px;
+  width: 20%;
+  text-align: center;
+  border: none;
+  background-color: #cc6ce62f;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 4px;
+  margin-left: 360.406px;
 }
 
 /* --------------------------------------MEDIA QUERIES-------------------------------- */
@@ -486,5 +501,14 @@ iframe {
   .menu:active {
     background-color: #cccccc26;
     transition: background-color 0.3s ease;
+  }
+
+  #load-more {
+    width: 50%;
+    margin-left: 80px;
+  }
+
+  #load-more a {
+    text-align: center;
   }
 }

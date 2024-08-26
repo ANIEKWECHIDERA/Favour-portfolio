@@ -25,7 +25,7 @@
     </header>
 
     <main>
-      <section class="projects">
+      <section class="projects" id="video-container">
         <div class="modal" id="videoModal">
           <div class="modal-content">
             <span class="close-btn">&times;</span>
@@ -87,7 +87,7 @@
           <iframe
             src="https://drive.google.com/file/d/1FV3Tuity4PkGvxUTSrNM5AJDdciuO2l8/preview"
             frameborder="0"
-            width="320"
+            width="240"
             height="240"
             thumbnail=""
             class="Video-thumbnail"
@@ -95,13 +95,13 @@
           <h2 class="video-title">
             COVID 19 Impact on Airport Traffic in 2020
           </h2>
-        </div> -->
+        </div> 
 
-        <!-- <div class="project">
+         <div class="project">
           <iframe
             src="https://drive.google.com/file/d/1dGGhJwYGG6LE3SboTILcCQCqt5QRylul/preview"
             frameborder="0"
-            width="320"
+            width="240"
             height="240"
             thumbnail=""
             class="Video-thumbnail"
@@ -113,7 +113,7 @@
           <iframe
             src="https://drive.google.com/file/d/1yCDgavtwW3hBENfHYxhZ4zO3AxKNLGhg/preview"
             frameborder="0"
-            width="320"
+            width="240"
             height="240"
             thumbnail=""
             class="Video-thumbnail"
@@ -125,7 +125,7 @@
           <iframe
             src="https://drive.google.com/file/d/15X0seXSu5GwQxoq7v47BsKUgnWo6ONtL/preview"
             frameborder="0"
-            width="320"
+            width="240"
             height="240"
             thumbnail=""
             class="Video-thumbnail"
@@ -137,7 +137,7 @@
           <iframe
             src="https://drive.google.com/file/d/1hwmVstJqRomav93prOErtGdSqAz3ENeL/preview"
             frameborder="0"
-            width="320"
+            width="240"
             height="240"
             thumbnail=""
             class="Video-thumbnail"
@@ -149,7 +149,7 @@
           <iframe
             src="https://drive.google.com/file/d/1RPi6na032xVZXPKDScREjwnzvkFTAMUx/preview"
             frameborder="0"
-            width="320"
+            width="240"
             height="240"
             thumbnail=""
             class="Video-thumbnail"
@@ -161,7 +161,7 @@
           <iframe
             src="https://drive.google.com/file/d/1AUZiNQFtVgI__6oYYE0PCjFeCKNkccyU/preview"
             frameborder="0"
-            width="320"
+            width="240"
             height="240"
             thumbnail=""
             class="Video-thumbnail"
@@ -173,7 +173,7 @@
           <iframe
             src="https://drive.google.com/file/d/10Im8cOCNBqH-Q9S2uo_dQSTLH7r06Qqp/preview"
             frameborder="0"
-            width="320"
+            width="240"
             height="240"
             thumbnail=""
             class="Video-thumbnail"
@@ -185,7 +185,7 @@
           <iframe
             src="https://drive.google.com/file/d/1Jjv5t6IviyBzLLr4LLXd8QS7SUVHcELv/preview"
             frameborder="0"
-            width="320"
+            width="240"
             height="240"
             thumbnail=""
             class="Video-thumbnail"
@@ -197,7 +197,7 @@
           <iframe
             src="https://drive.google.com/file/d/181KOUDNbHYZdqC2eLjRP5lc3w6RcOIFI/preview"
             frameborder="0"
-            width="320"
+            width="240"
             height="240"
             thumbnail=""
             class="Video-thumbnail"
@@ -205,6 +205,7 @@
           <h2 class="video-title">2015 USA Flight Delay</h2>
         </div> -->
       </section>
+      <button id="load-more">See More</button>
 
       <section class="skills-contact">
         <div class="skills">
@@ -265,6 +266,91 @@
       };
 
       //menuBtn.addEventListener('click', openMenu);
+    </script>
+
+    <script>
+      const videoContainer = document.getElementById('video-container');
+      const loadMoreButton = document.getElementById('load-more');
+
+      const allVideos = [
+        {
+          src: 'https://drive.google.com/file/d/1FV3Tuity4PkGvxUTSrNM5AJDdciuO2l8/preview',
+          title: 'COVID 19 Impact on Airport Traffic in 2020',
+        },
+        {
+          src: 'https://drive.google.com/file/d/1dGGhJwYGG6LE3SboTILcCQCqt5QRylul/preview',
+          title: 'Shark Attacks Analysis',
+        },
+        {
+          src: 'https://drive.google.com/file/d/1yCDgavtwW3hBENfHYxhZ4zO3AxKNLGhg/preview',
+          title: 'NYC Taxi Trips Analysis',
+        },
+        {
+          src: 'https://drive.google.com/file/d/15X0seXSu5GwQxoq7v47BsKUgnWo6ONtL/preview',
+          title: 'NCDC COVID 19 Analysis',
+        },
+        {
+          src: 'https://drive.google.com/file/d/1hwmVstJqRomav93prOErtGdSqAz3ENeL/preview',
+          title: 'Historical Stock Prices Analysis',
+        },
+        {
+          src: 'https://drive.google.com/file/d/1RPi6na032xVZXPKDScREjwnzvkFTAMUx/preview',
+          title: 'Excel Dashboard',
+        },
+        {
+          src: 'https://drive.google.com/file/d/1AUZiNQFtVgI__6oYYE0PCjFeCKNkccyU/preview',
+          title: 'Cholera Outbreak',
+        },
+        {
+          src: 'https://drive.google.com/file/d/10Im8cOCNBqH-Q9S2uo_dQSTLH7r06Qqp/preview',
+          title: 'Brazillian E-Commerce',
+        },
+        {
+          src: 'https://drive.google.com/file/d/1Jjv5t6IviyBzLLr4LLXd8QS7SUVHcELv/preview',
+          title: 'Bitcoin Historical Data Analysis',
+        },
+        {
+          src: 'https://drive.google.com/file/d/181KOUDNbHYZdqC2eLjRP5lc3w6RcOIFI/preview',
+          title: '2015 USA Flight Delay',
+        },
+      ];
+
+      let videosLoaded = 0;
+      const videosPerClick = 3; // Number of videos to load per click
+
+      loadMoreButton.addEventListener('click', function () {
+        const remainingVideos = allVideos.length - videosLoaded;
+        const videosToLoad = Math.min(videosPerClick, remainingVideos);
+
+        for (let i = 0; i < videosToLoad; i++) {
+          const video = allVideos[videosLoaded + i];
+          const projectDiv = document.createElement('div');
+          projectDiv.classList.add('project');
+
+          const iframe = document.createElement('iframe');
+          iframe.src = video.src;
+          iframe.width = '240';
+          iframe.height = '240';
+          iframe.frameBorder = '0';
+          iframe.classList.add('Video-thumbnail');
+
+          const title = document.createElement('h2');
+          title.classList.add('video-title');
+          title.textContent = video.title;
+
+          projectDiv.appendChild(iframe);
+          projectDiv.appendChild(title);
+          videoContainer.appendChild(projectDiv);
+          projectDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        videosLoaded += videosToLoad;
+
+        // Hide the button if all videos have been loaded
+        if (videosLoaded >= allVideos.length) {
+          loadMoreButton.style.display = 'none';
+        }
+      });
     </script>
   </body>
 </html>
