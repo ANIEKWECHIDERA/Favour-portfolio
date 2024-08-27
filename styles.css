@@ -335,7 +335,13 @@ iframe {
   color: white;
   padding: 5px 20px;
   border-radius: 4px;
-  margin-left: 360.406px;
+  /* margin-left: 360.406px; */
+}
+
+.btn-container {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* --------------------------------------MEDIA QUERIES-------------------------------- */
@@ -505,7 +511,7 @@ iframe {
 
   #load-more {
     width: 50%;
-    margin-left: 80px;
+    /* margin-left: 80px; */
   }
 
   #load-more a {
