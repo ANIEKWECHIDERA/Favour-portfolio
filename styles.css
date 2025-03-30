@@ -60,6 +60,7 @@ nav {
 
 nav h2 {
   color: white;
+  cursor: pointer;
 }
 
 .menu {
@@ -406,6 +407,7 @@ iframe {
     background-position: center center;
     background-size: cover;
     border-radius: 3px;
+    margin-top: 20px;
   }
 
   nav {
